@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardescriptionActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/design_default_color_primary_dark"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <TextView
+        android:id="@+id/txtcarsdesc"
+        android:layout_below="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Car Description"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imgcarmodel"
+        android:layout_below="@+id/txtcarsdesc"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/car" />
+
+    <TextView
+        android:id="@+id/txtcarmodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgcarmodel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Car Model"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcarmodel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgcardesc"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@color/common_google_signin_btn_text_dark_default"
+                app:srcCompat="?android:attr/actionModePasteDrawable" />
+            <TextView
+                android:id="@+id/txtcardesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_toRightOf="@+id/imgcardesc"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgloc"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/txtcardesc"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_google_signin_btn_text_dark_default"
+                app:srcCompat="@drawable/location" />
+
+            <TextView
+                android:id="@+id/txtloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtcardesc"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgloc"
+                android:text="TextView"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgpickdate"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/txtloc"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/txtpickupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtloc"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imgpickdate"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imgdropdate"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/txtpickupdate"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/txtdropoffdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtpickupdate"
+                android:layout_toRightOf="@id/imgdropdate"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgdollar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/txtdropoffdate"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/dollar" />
+            <TextView
+                android:id="@+id/txttripcost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtdropoffdate"
+                android:layout_toRightOf="@id/imgdollar"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnbookcar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txttripcost"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="Request Booking"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

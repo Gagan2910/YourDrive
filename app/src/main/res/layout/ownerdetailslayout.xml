@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:id="@+id/rellayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ownerprofilepic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/ownercarmodel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/ownerprofilepic"
+                android:text="Car Model"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/owneraddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ownercarmodel"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ownerprofilepic"
+                android:text="Owner Location"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ownercontactno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/owneraddress"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ownerprofilepic"
+                android:text="Contact no"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imgcontact"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/ownercontactno"
+                android:layout_toRightOf="@id/ownerprofilepic"
+                android:background="@android:drawable/sym_action_call" />
+
+            <ImageView
+                android:id="@+id/imgmessage"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/ownercontactno"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgcontact"
+                android:background="@android:drawable/sym_action_chat" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

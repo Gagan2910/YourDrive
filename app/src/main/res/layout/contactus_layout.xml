@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default">
+
+    <TextView
+        android:id="@+id/txtviewcontactus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Contact us"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"  />
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtviewcontactus"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:text="Our Website: https://yourdrive.co.nz"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:layout_below="@id/website"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebook"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:text="Followus on:"/>
+
+    <ImageView
+        android:id="@+id/facebookimage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/website"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/facebook"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/facebook" />
+    <EditText
+        android:id="@+id/contactemailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebook"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Your Email Address"
+        android:textSize="24dp"
+        />
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/contactemailaddress"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Your Message"
+        android:gravity="top"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/btncontactus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="Send"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
